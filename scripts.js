@@ -90,7 +90,7 @@ function enviarVoto(candidato, imagemUrl) {
 
   // Adiciona o botão ao elemento de resultado
   document.getElementById("resultado").appendChild(botaoResultado);
-}
+
   // Envia os dados do formulário Netlify via fetch
   fetch("/", {
     method: "POST",
@@ -103,7 +103,7 @@ function enviarVoto(candidato, imagemUrl) {
   })
   .then(() => console.log("Voto registrado com sucesso"))
   .catch((error) => console.error("Erro ao registrar o voto:", error));
-
+}
 
 // Função para reiniciar a votação após o tempo expirar
 function reiniciarVotacao() {
