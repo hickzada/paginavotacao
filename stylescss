@@ -1,0 +1,106 @@
+/* Geral */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container principal */
+  .content {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  /* Título da página */
+  .results-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  /* Subtítulo */
+  .subheading {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 10px;
+    font-weight: 400;
+  }
+  
+  /* Estilo de links (caso queira customizar botões ou links) */
+  a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: 500;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  /* Adicionando um efeito visual no hover dos links */
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo do botão Voltar à Página Inicial */
+.back-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries para responsividade */
+  @media (max-width: 768px) {
+    .results-title {
+      font-size: 2rem; /* Reduz o tamanho do título em telas menores */
+    }
+  
+    .subheading {
+      font-size: 1rem; /* Reduz o tamanho do subtítulo em telas menores */
+    }
+  
+    .content {
+      padding: 30px; /* Menos padding em telas menores */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .results-title {
+      font-size: 1.8rem; /* Ajuste ainda maior para telas muito pequenas */
+    }
+  
+    .subheading {
+      font-size: 0.9rem; /* Ajusta o tamanho do subtítulo para telas menores */
+    }
+  
+    .content {
+      padding: 20px; /* Menos padding em telas muito pequenas */
+    }
+  
+    a {
+      font-size: 0.9rem; /* Ajuste do tamanho da fonte do link */
+    }
+  }
+  
