@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urna Eletrônica</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="urna-container">
+    <div id="nomeForm">
+      <h2>Qual é o seu nome?</h2>
+      <input type="text" id="nomeInput" placeholder="Digite seu nome">
+      <button onclick="iniciarVotacao()">Iniciar Votação</button>
+    </div>
+    <div id="urna" style="display: none;">
+      <h1>Justiça Eleitoral</h1>
+      <div id="display">
+      </div>
+      <div class="teclado">
+        <button type="button" onclick="digitarNumero(1)">1</button>
+        <button type="button" onclick="digitarNumero(2)">2</button>
+        <button type="button" onclick="digitarNumero(3)">3</button>
+        <button type="button" onclick="digitarNumero(4)">4</button>
+        <button type="button" onclick="digitarNumero(5)">5</button>
+        <button type="button" onclick="digitarNumero(6)">6</button>
+        <button type="button" onclick="digitarNumero(7)">7</button>
+        <button type="button" onclick="digitarNumero(8)">8</button>
+        <button type="button" onclick="digitarNumero(9)">9</button>
+        <button type="button" onclick="branco()">Branco</button>
+        <button type="button" onclick="digitarNumero(0)">0</button>
+        <button type="button" onclick="corrige()">Corrige</button>
+        <button type="button" onclick="confirma()">Confirma</button>
+      </div>
+    </div>
+    <div id="resultado" style="display: none;">
+      <h2 id="mensagemVoto"></h2>
+      <img id="imagemCandidato" src="" alt="Candidato Votado">
+    </div>
+    <form id="netlifyForm" name="votoForm" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="nome" id="netlifyNome">
+      <input type="text" name="voto" id="netlifyVoto">
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
